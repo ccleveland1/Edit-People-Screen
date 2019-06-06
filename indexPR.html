@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>People Record Edit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylePR.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="green-bar"><i class="fas fa-caret-down"></i>Alert</div>
+		<div class="body-box">Rn Nurse Certificate expired 4/20/2019</div>
+	</div>
+
+	<div class="container">
+		<div class="green-bar"><i class="fas fa-caret-down"></i>Duplicate Peope Record</div>
+		<div class="body-box">
+			<div><strong>Potential Duplicate People Records Found:</strong></div>
+			<div>Ellen Bohmback - Long Beach 1013 | Concluded Stage | Last Action Date: 8/21/2019</div>
+			<div class="duplicates">Ellen Bohmback - Torrence 1007 | Active Stage | Last Action Date: 2/21/19</div>
+			<div class="duplicates">Ellen Bohmback - Torrence 1007 | Active Stage | Last Action Date: 2/21/19</div>
+			<div class="view-all">VIEW ALL<i class="fas fa-caret-right"></i></div></div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="green-bar"><i class="fas fa-caret-down"></i>Contact Information</div>
+		<div class="body-box">
+			<div class="title"><strong>Contact Info</strong></div>
+			<hr>
+			<form class="section-1">
+				<div class="row">
+					<div class="column">
+					  	<div class="inner-container">
+							<label>Last Name:<span class="required">*</span></label>
+							<input class="credential" type="text" name="last-name" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>First Name:<span class="required">*</span></label>
+							<input class="credential" type="text" name="first-name" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Preferred Last Name:</label>
+							<input class="credential" type="text" name="preferred-name" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Preferred First Name:</label>
+							<input class="credential" type="text" name="preferred-name" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Address:</label>
+							<input class="credential" type="text" name="address" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Address:</label>
+							<input class="credential" type="text" name="address" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>City:</label>
+							<input class="credential" type="text" name="city" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>State:</label>
+							<input class="credential" type="text" name="state" value=""/>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inner-container">
+							<label>External ID:<span class="required">*</span></label>
+							<input class="credential" type="text" name="external-ID" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>SSN:<span class="required">*</span></label>
+							<input class="credential" type="text" name="ssn" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Email:</label>
+							<input class="credential" type="text" name="email" value=""/>
+						</div>
+
+						<div >
+							<input type="checkbox" name="email-opt-out" value="opt-"> Email Opt-Out<br>
+						</div>
+
+						<div class="inner-container">
+							<label>Home Phone Number:</label>
+							<input class="credential" type="text" name="home-number" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Mobile Phone Number:</label>
+							<input class="credential" type="text" name="mobile-number" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Emergency Number:</label>
+							<input class="credential" type="text" name="emergency-number" value=""/>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="buttons">
+			  <button class="save" type="button" onclick="">Save</button>
+
+			  <button class="cancel" type="button" onclick="">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="green-bar"><i class="fas fa-caret-down"></i>Job Experience</div>
+			<div class="body-box">
+				<div class="title"><strong>Candidate Work Profile</strong></div>
+				<hr>
+				<form class="section-1">
+					<div class="row">
+						<div class="column">
+						<div class="inner-container">
+							<label>Office/People ID:</label>
+							<input class="credential" type="text" name="office-ID" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Employee Job Title:</label>
+							<input class="credential" type="text" name="job-title" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Employee Type:</label>
+							<input class="credential" type="text" name="employee-type" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Temp Salary:</label>
+							<input class="credential" type="text" name="salary" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Perm Salary:</label>
+							<select>
+							  <option value="20-40">$20,000 - $40,000</option>
+							  <option value="40-60">$40,000 - $60,000</option>
+							  <option value="60-80">$60,000 - $80,000</option>
+							  <option value="80-100">$80,000 - $100,000</option>
+							</select>
+						</div>
+
+						<div class="inner-container">
+							<label>Industry:</label>
+							<select>
+							  <option value="Architecture">Architecture Services</option>
+							  <option value="Healthcare">Healthcare</option>
+							  <option value="Customer Services">Customer Services</option>
+							  <option value="Administrative">Administrative</option>
+							</select>
+						</div>
+
+						<div class="inner-container">
+							<label>Experience Level:</label>
+							<select>
+							  <option value="Less than 1 year">Architecture Services</option>
+							  <option value="2-4 years">Healthcare</option>
+							  <option value="4-8 years">Customer Services</option>
+							  <option value="8-10 years">Administrative</option>
+							</select>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inner-container">
+							<label>Recent Job Title:</label><span><strong>  CITI-01BHA-Admin Basic High</strong></span>
+						</div>
+
+						<div class="inner-container">
+							<label>Recent Employer:</label> <span><strong>  Wells Fargo</strong></span>
+						</div>
+
+						<div class="inner-container">
+							<label>Pay Rate:</label>
+							<input class="credential" type="text" name="employee-type" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Salary:</label>
+							<input class="credential" type="text" name="salary" value=""/>
+						</div>
+					</div>
+					<div class="column2">
+						<div class="inner-container">
+							<label>Job Function:</label>
+							<textarea class="credential" name="message" style="width:70%;height:30px;"></textarea>
+						</div>
+						<div class="inner-container">
+							<label>Sales Bullets:</label>
+							<textarea class="credential" name="message" style="width:70%;height:30px;"></textarea>
+						</div>
+						<div class="inner-container">
+							<label>Sales Bullets:</label>
+							<textarea class="credential" name="message" style="width:70%;height:30px;"></textarea>
+						</div>
+						<div class="inner-container">
+							<label>Profile:</label>
+							<textarea class="credential" name="message" style="width:70%;height:30px;"></textarea>
+						</div>
+						<div class="inner-container">
+							<label>Candidate Sell:</label>
+							<textarea class="credential" name="message" style="width:70%;height:30px;"></textarea>
+						</div>
+						<div class="inner-container">
+							<label>Note:</label>
+							<textarea class="credential" name="message" value="" style="width:70%;height:30px;"></textarea>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inner-container">
+							<label>Tag:</label>
+							<input class="credential" type="text" name="tag" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Tag:</label>
+							<input class="credential" type="text" name="tag" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Tag:</label>
+							<input class="credential" type="text" name="tag" value=""/>
+						</div>
+					</div>
+						<div class="column">
+							<div class="inner-container">
+								<label>Tag:</label>
+								<input class="credential" type="text" name="tag" value=""/>
+							</div>
+
+							<div class="inner-container">
+								<label>Tag:</label>
+								<input class="credential" type="text" name="tag" value=""/>
+							</div>
+
+							<div class="inner-container">
+								<label>Tag:</label>
+								<input class="credential" type="text" name="tag" value=""/>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="buttons">
+				  <button class="save" type="button" onclick="">Save</button>
+
+				  <button class="cancel" type="button" onclick="">Cancel</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="green-bar"><i class="fas fa-caret-down"></i>Additional Profile Information</div>
+		<div class="body-box">
+			<div class="title"><strong>AE Information</strong></div>
+			<hr>
+			<form class="section-1">
+				<div class="row">
+					<div class="column">
+					  	<div class="inner-container">
+							<label>AE Name:</label>
+							<input class="credential" type="text" name="last-name" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>SA Name:</label>
+							<input class="credential" type="text" name="first-name" value=""/>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inner-container">
+							<label>AE Email:</label><span><strong>   kford@mail.all-in-1.com</strong></span>
+						</div>
+
+						<div class="inner-container">
+							<label>SA Email:</label><span><strong>   </strong></span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="title"><strong>Candidate Information</strong></div>
+			<hr>
+			<form class="section-1">
+				<div class="row">
+					<div class="column">
+					  	<div class="inner-container">
+							<label>Hot Candiate:</label>
+							<input type="checkbox" name="email-opt-out" value="opt-">
+						</div>
+
+						<div class="inner-container">
+							<label>Mapped:</label><span><strong>   No</strong></span>
+						</div>
+
+						<div class="inner-container">
+							<label>City, State:</label>
+							<input class="credential" type="text" name="external-ID" value=""/>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inner-container">
+							<label>A/R/E:</label>
+							<input class="credential" type="text" name="external-ID" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Confidential:</label>
+							<input class="credential" type="text" name="ssn" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Recruiting Source:</label>
+							<input class="credential" type="text" name="ssn" value=""/>
+						</div>
+
+						<div class="inner-container">
+							<label>Detail:</label>
+							<input class="credential" type="text" name="ssn" value=""/>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="title"><strong>Candidate Activities</strong></div>
+			<hr>
+			<form class="section-1">
+				<div class="row">
+					<div class="column">
+					  	<div class="inner-container">
+							<label>Last Action:</label><span><strong>   Creation</strong></span>
+						</div>
+
+						<div class="inner-container">
+							<label>Last Activity:</label><span><strong>   </strong></span>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inner-container">
+							<label>First Interview Date:</label><span><strong>   10/5/2018</strong></span>
+						</div>
+
+						<div class="inner-container">
+							<label>Reactivation Date:</label><span><strong>   </strong></span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="title"><strong>Acrued Leave</strong></div>
+			<hr>
+			<form class="section-1">
+				<div class="row">
+					<div class="column">
+					  	<div class="inner-container">
+							<label>Modified By:</label><span><strong>   Imported on 8/27/2018 4:53 PM</strong></span>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inner-container">
+							<label>Created By:</label><span><strong>   Imported on 8/27/2018 4:53 PM</strong></span>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="buttons">
+			  <button class="save" type="button" onclick="">Save</button>
+
+			  <button class="cancel" type="button" onclick="">Cancel</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+
+
+
+
+
+<!--
+<div class="container">
+	<div class="green-bar"><i class="fas fa-caret-down"></i>Contact Information</div>
+	<div class="body-box"><div class="title">Contact Info</div>
+	<hr>
+	<span>Last Name:<span class="required">*</span></span><input type="text" name="firstname" value="">
+	<br>
+	<span>First Name:<span class="required">*</span></span> <input type="text" name="firstname" value="">
+	<br>
+	<span>Preferred Last Name:</span> <input type="text" name="firstname" value="">
+	<br>
+	<span>Preferred First Name:</span> <input type="text" name="firstname" value="">
+	<br>
+	<span>Address:</span> <input type="text" name="firstname" value="">
+	<br>
+	<span>Address:</span> <input type="text" name="firstname" value="">
+	<br>
+	<span>City:</span> <input type="text" name="firstname" value="">
+	<br>
+	<span>State:</span> <input type="text" name="firstname" value="">
+	<br>
+
+	</div>
+</div>
+-->
+
+</body>
+</html>
+
+	
